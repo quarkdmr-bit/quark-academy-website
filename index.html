@@ -4,6 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QUARK ACADEMY, DUMRAON</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #123c69, #1d75b9);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 17px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    nav a {
+      color: #123c69;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 9px;
+      display: inline-block;
+      padding: 6px 2px;
+    }
+
+    nav a:hover {
+      color: #e67e22;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      margin: 22px 15px;
+      padding: 35px 25px;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #123c69;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 55px 25px;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f0f6ff;
+      padding: 22px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #123c69;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      nav a {
+        margin: 3px 6px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 25px 18px;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -13,11 +152,12 @@
     <p>DUMRAON</p>
     <p>English Medium • Co-educational School</p>
     <p>Based on CBSE Curriculum</p>
+    <p>Classes: Nursery to Class X</p>
   </header>
 
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">About Us</a>
+    <a href="#about">About</a>
     <a href="#academics">Academics</a>
     <a href="#admission">Admissions</a>
     <a href="#notices">Notices</a>
@@ -27,10 +167,10 @@
 
   <main>
 
-    <section id="home">
+    <section id="home" class="hero">
       <h2>Welcome to QUARK ACADEMY</h2>
-      <p>English Medium Co-educational School</p>
-      <p>Classes: Nursery to Class X</p>
+      <p>Learning Today • Leading Tomorrow</p>
+      <p>Providing quality education from Nursery to Class X.</p>
     </section>
 
     <section id="about">
@@ -43,33 +183,64 @@
 
     <section id="academics">
       <h2>Academics</h2>
-      <p>We provide education from Nursery to Class X.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Nursery</h3>
+          <p>Foundation learning</p>
+        </div>
+
+        <div class="card">
+          <h3>LKG & UKG</h3>
+          <p>Early childhood education</p>
+        </div>
+
+        <div class="card">
+          <h3>Primary</h3>
+          <p>Classes I to V</p>
+        </div>
+
+        <div class="card">
+          <h3>Middle & Secondary</h3>
+          <p>Classes VI to X</p>
+        </div>
+      </div>
     </section>
 
     <section id="admission">
       <h2>Admissions</h2>
-      <p>Admission information will be updated here.</p>
+      <p>
+        Admission information, application details and important
+        announcements will be published here.
+      </p>
     </section>
 
     <section id="notices">
       <h2>Latest Notices</h2>
-      <p>School notices and announcements will appear here.</p>
+      <p>
+        School notices and announcements will appear here.
+      </p>
     </section>
 
     <section id="gallery">
       <h2>Photo Gallery</h2>
-      <p>School photographs will be added here.</p>
+      <p>
+        School photographs and event memories will be displayed here.
+      </p>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>QUARK ACADEMY, DUMRAON</p>
+      <p><strong>QUARK ACADEMY, DUMRAON</strong></p>
+      <p>English Medium • Co-educational School</p>
+      <p>Classes: Nursery to Class X</p>
     </section>
 
   </main>
 
   <footer>
     <p>© 2026 QUARK ACADEMY, DUMRAON</p>
+    <p>All Rights Reserved.</p>
   </footer>
 
 </body>
